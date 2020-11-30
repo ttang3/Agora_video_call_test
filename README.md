@@ -31,7 +31,8 @@ On Windows:
 
 	(1) cp video_call/x64/(debug/release)/agora_video_call_test.exe, agora_rtc_sdk.dll and init.ini to another Wndows 10 machine. 
 		and run agora_video_call_test.exe there, click "join".
-	(2) Run agora_video_call_test.exe locally, click "Join",  "leave", "start share", mute audio , video, start video device test etc.
+	(2) cd agora_rest_test, run "build_run.bat"
+	(3) Run video_call/x64/(debug/release)/agora_video_call_test.exe locally, click "Join",  "leave", "start share", mute audio , video, start video device test etc.
 		See effect on the other Widnow 10 Machine.
 
 
