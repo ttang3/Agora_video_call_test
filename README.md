@@ -10,7 +10,8 @@ On Windows:
 	cd agora_rest_test
 	 run "build_run.bat" to start the REST Service
 
-On Linux,
+#On Linux,
+	
 	cd agora_rest_test
  	#Refer to README
 	run "make" to build, then "make run_secure" to start the REST Service
