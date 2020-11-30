@@ -1,0 +1,8 @@
+{
+ "req_id": "1181",
+ "requestor": "abalaie",
+ "jira": "FALCMOCI-2349",
+ "falcm-jenkins-link": "http:\/\/slcifaa.us.oracle.com:8086\/jenkins\/falcm\/job\/parameterized_falcm\/7293",
+ "test-report-link":"http://slcifaa.us.oracle.com:8086/jenkins/falcm/job/parameterized_falcm/7293/testReport/",
+ "code-coverage-link":"https://hudsonci.oraclecorp.com/jenkins/falcm/job/parameterized_falcm/7293/jacoco"
+}
