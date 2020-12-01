@@ -113,13 +113,15 @@ BOOL CAgoraVideoCallTestDlg::OnInitDialog()
 	DWORD num = GetPrivateProfileString (_T("AgoraTest"), _T("APP_ID"), _T("a49a5bfef6064ba39c1b9495ce5f3910"), m_APP_ID, MAX_PATH, csPath);
 	DWORD num1 = GetPrivateProfileString(_T("AgoraTest"), _T("MEDIA_TOKEN"), _T("006b3eac52789f14758922e38e0f4fe25beIACdansJmgVJsahlRW8rfl6VI4EJ1cRcflxWf1VEO0zoc11qgTMAAAAAEACVypXNsq7FXwEAAQCyrsVf"), m_MEDIA_TOKEN, MAX_PATH, csPath);
 	m_useMediaToken = GetPrivateProfileInt(_T("AgoraTest"), _T("USE_MEDIA_TOKEN"), FALSE, csPath);
+	DWORD num2 = GetPrivateProfileString(_T("AgoraTest"), _T("REST_URL"), _T("https://localhost:8889"), m_MYRESTBASEURI, MAX_PATH, csPath);
 
 	m_OrigLocalBitmap = m_wndLocal.GetBitmap();
 	m_OrigRemoteBitmap = m_wndRemote.GetBitmap();
 
-	const string MYRESTBASEURI = "https://localhost:8889";
+	wstring str = m_MYRESTBASEURI;
+	string str1(str.begin(), str.end());
 
-	m_lpAgoraRESTCall = new CAgoraRESTCall(MYRESTBASEURI);
+	m_lpAgoraRESTCall = new CAgoraRESTCall(str1);
 
 	m_lpAgoraRtcEngine = CAgoraRtcEngine::GetAgoraRtcEngine(m_APP_ID);
 	

@@ -66,6 +66,7 @@ private:
 
 	TCHAR		m_APP_ID[MAX_PATH];
 	TCHAR		m_MEDIA_TOKEN[MAX_PATH];
+	TCHAR		m_MYRESTBASEURI[MAX_PATH];
 	BOOL		m_useMediaToken;
 
 public:
